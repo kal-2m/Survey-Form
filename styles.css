@@ -1,0 +1,129 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     background-color: var(--color-darkblue-alpha);
+}
+:root {
+     --color-white: #f3f3f3;
+     --color-darkblue: #1b1b32;
+     --color-darkblue-alpha: #1b1b32cc;
+     --color-green: #37af65;
+}
+body {
+     background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+     color: #f3f3f3;
+     font-family: Poppins, sans-serif;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center; /* Centers the image */
+     background-attachment: fixed; 
+}
+.form {
+     background-color: var(--color-darkblue-alpha);
+     width: 100%;
+     height: auto;
+     padding: 40px;
+}
+#title,
+#description {
+     text-align: center;
+}
+#title {
+     font-size: 32px;
+     color: #f3f3f3;
+     font-family: Poppins, sans-serif;
+     margin: 0 0 8px;
+}
+#description{
+    font-size: 18px;
+     color: #f3f3f3;
+     font-family: Poppins, sans-serif;
+     margin: 0 0 8px;
+     font-style: italic;
+     font-weight: 200;
+}
+
+/* Form */
+
+form {
+     width: 500px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: var(--color-darkblue);
+     padding: 40px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 4px;
+}
+.input{
+display: block;
+margin: 0 0 8px;
+}
+.form-group input ,select{
+    width: 100%;
+    padding: 5px;
+}
+.form-group input:focus{
+    outline: none;
+}
+.form-group select{
+    margin-top: 10px;
+}
+.form-group select:focus{
+   outline: none;
+}
+.form-group{
+    margin: 0 0 20px;
+}
+/* Recomendation */
+.recomendation{
+    margin-bottom: 10px;
+}
+.recomendation input{
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.recomendation label{
+    display: block;
+    
+}
+/* improvement */
+.improvement ,.sugestions{
+    margin-bottom: 10px;
+}
+.improvement label{
+    display: block;
+    margin-top: 10px;
+}
+/* Sugestions */
+
+.sugestions label{
+    margin-bottom: 10px;
+}
+.sugestions textarea{
+    width: 100%;
+    margin-top: 10px;
+}
+/* Button */
+button{
+cursor: pointer;
+background-color: #ff4500;
+padding: 9px;
+outline: none;
+border: none;
+color: var(--color-white);
+align-self: center; /* or center, flex-end based on your requirement */
+width: 70px;
+border-radius: 5px;
+}
+button:hover{
+    background-color: #ff4400cb;
+}
+ /* Hr */
+hr{
+    height: 4px;
+    background-color: brown;
+    border-color: brown;
+    margin-bottom: 10px;
+ }
